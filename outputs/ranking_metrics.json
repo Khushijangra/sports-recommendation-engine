@@ -1,0 +1,31 @@
+{
+  "validation": {
+    "ndcg@1": 0.9766206271304049,
+    "ndcg@3": 0.9629132721163359,
+    "ndcg@5": 0.9731020368749855,
+    "ndcg@10": 0.9824629322000951,
+    "map@10": 0.9804260218767991,
+    "hit@1": 0.9620034542314335
+  },
+  "test": {
+    "ndcg@1": 0.9754219446681422,
+    "ndcg@3": 0.9678873974157957,
+    "ndcg@5": 0.9750869096504078,
+    "ndcg@10": 0.9840863960200558,
+    "map@10": 0.9791306850892343,
+    "hit@1": 0.9620034542314335
+  },
+  "feature_count": 53,
+  "params": {
+    "objective": "rank:ndcg",
+    "eval_metric": "ndcg@10",
+    "learning_rate": 0.08,
+    "max_depth": 4,
+    "n_estimators": 400,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "min_child_weight": 6,
+    "reg_alpha": 0.6,
+    "reg_lambda": 2.0
+  }
+}

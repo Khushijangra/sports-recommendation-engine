@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Recommendation System</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🏆</span>
+                    <h1>SportMatch</h1>
+                </div>
+                <p class="tagline">AI-Powered Sports Recommendations for Students</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Search Section -->
+            <section class="search-section glass-card">
+                <h2>Find a Student</h2>
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search by student name or class..."
+                        autocomplete="off"
+                    >
+                    <div id="searchResults" class="search-results hidden"></div>
+                </div>
+                
+                <!-- Stats -->
+                <div id="stats" class="stats-bar">
+                    <span class="stat-item">Loading...</span>
+                </div>
+                
+                <!-- Limitations Disclaimer -->
+                <div class="disclaimer">
+                    <strong>⚠️ Note:</strong> This system measures physical fitness, not sport-specific skills. 
+                    Recommendations are a starting point for exploration, not definitive predictions.
+                </div>
+            </section>
+            
+            <!-- Preferences Section (shown after student selected) -->
+            <section id="preferencesSection" class="preferences-section glass-card hidden">
+                <h3>🎯 Sports Interests (Optional)</h3>
+                <p class="pref-desc">Select sports you're interested in - we'll boost their ranking if they're a good fit.</p>
+                <div id="preferencesList" class="preferences-list"></div>
+                <button id="applyPreferences" class="apply-btn">Apply Preferences</button>
+            </section>
+
+            <!-- Selected Student & Results -->
+            <div id="resultsContainer" class="results-container hidden">
+                <!-- Student Profile Card -->
+                <section class="student-card glass-card">
+                    <div class="student-header">
+                        <div class="student-avatar" id="studentAvatar">👤</div>
+                        <div class="student-info">
+                            <h3 id="studentName">Student Name</h3>
+                            <p id="studentDetails">Class • Age • Gender</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Radar Chart -->
+                    <div class="chart-container">
+                        <h4>Fitness Profile</h4>
+                        <canvas id="radarChart" width="300" height="300"></canvas>
+                    </div>
+                    
+                    <!-- Score Bars -->
+                    <div class="scores-grid" id="scoresGrid"></div>
+                </section>
+
+                <!-- Recommendations -->
+                <section class="recommendations-section">
+                    <h2>🎯 Top Sport Recommendations</h2>
+                    <div id="recommendationsList" class="recommendations-list"></div>
+                </section>
+            </div>
+
+            <!-- Empty State -->
+            <section id="emptyState" class="empty-state glass-card">
+                <div class="empty-icon">🔍</div>
+                <h3>Search for a Student</h3>
+                <p>Enter a student's name or class to get personalized sport recommendations based on their fitness profile.</p>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <span>📊</span>
+                        <p>Data-Driven Analysis</p>
+                    </div>
+                    <div class="feature">
+                        <span>🎯</span>
+                        <p>20 Sports Evaluated</p>
+                    </div>
+                    <div class="feature">
+                        <span>💡</span>
+                        <p>Explainable Results</p>
+                    </div>
+                    <div class="feature">
+                        <span>📈</span>
+                        <p>Confidence Scores</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>3-Tier Expert Recommendation System • Science-Backed • Age-Appropriate</p>
+            <p class="footer-disclaimer">For exploration purposes. Consult coaches for final decisions.</p>
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
