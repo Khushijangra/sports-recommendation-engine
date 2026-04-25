@@ -1,0 +1,144 @@
+# ============================================================
+# SportMatch — .gitignore
+# Protects: student data (PII), model binaries, paper assets,
+# API keys, dev artifacts, and virtual environments.
+# ============================================================
+
+# -----------------------------------------------------------
+# CRITICAL: Student Data (Privacy / PII)
+# -----------------------------------------------------------
+data/students.csv
+data/Sports_Data.csv
+data/final_model_dataset_v*.csv
+data/ranking_longform.csv
+data/students_backup_*.csv
+data/gender_counts.csv
+data/**/*.csv
+!data/sample_students.csv
+
+# -----------------------------------------------------------
+# CRITICAL: Trained Model Binaries (IP Protection)
+# -----------------------------------------------------------
+models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# -----------------------------------------------------------
+# CRITICAL: Unpublished Research Assets
+# -----------------------------------------------------------
+*.pdf
+*.tex
+*.bib
+docs/paper/
+paper/
+manuscripts/
+review/
+Finalizing Research Paper.md
+IEEE_Research_Paper*
+2new.tex
+3new.tex
+new.tex
+
+# -----------------------------------------------------------
+# CRITICAL: Intermediate Data Artifacts (May Contain PII)
+# -----------------------------------------------------------
+outputs/data_prepared.pkl
+outputs/data_prepared_rank.pkl
+outputs/split_students.json
+outputs/split_indices.json
+
+# -----------------------------------------------------------
+# Python
+# -----------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# -----------------------------------------------------------
+# Virtual Environments
+# -----------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# -----------------------------------------------------------
+# Environment / Secrets
+# -----------------------------------------------------------
+.env
+.env.*
+*.env
+config/secrets.yaml
+config/credentials.json
+secrets/
+
+# -----------------------------------------------------------
+# Dev Artifacts & Temporary Files
+# -----------------------------------------------------------
+tmp/
+temp/
+old_models/
+logs/
+*.log
+.cache/
+checkpoint.pkl
+
+# -----------------------------------------------------------
+# Large Outputs (safe to regenerate)
+# -----------------------------------------------------------
+outputs/backup/
+outputs/*.pkl
+outputs/ordinal_rank_predictions_top10.csv
+outputs/ranking_predictions_top10.csv
+outputs/ranking_predictions_top10_tuned.csv
+
+# -----------------------------------------------------------
+# IDE / OS Files
+# -----------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------------------
+# Jupyter
+# -----------------------------------------------------------
+.ipynb_checkpoints/
+
+# -----------------------------------------------------------
+# Git Large File Storage (if model files accidentally staged)
+# -----------------------------------------------------------
+*.lfs
+
+# -----------------------------------------------------------
+# Coverage / Testing
+# -----------------------------------------------------------
+.coverage
+htmlcov/
+.pytest_cache/

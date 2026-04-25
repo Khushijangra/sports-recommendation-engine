@@ -1,0 +1,23 @@
+{
+  "X_train_shape": [
+    27020,
+    53
+  ],
+  "X_val_shape": [
+    5790,
+    53
+  ],
+  "X_test_shape": [
+    5790,
+    53
+  ],
+  "n_features": 53,
+  "group_train_len": 2702,
+  "group_val_len": 579,
+  "group_test_len": 579,
+  "catalog_size": 12,
+  "long_df_shape": [
+    38600,
+    57
+  ]
+}
