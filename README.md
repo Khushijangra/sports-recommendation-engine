@@ -250,7 +250,7 @@ If you use this codebase or paper in your research, please cite:
 ```bibtex
 @inproceedings{sheoran2026explainable,
   title     = {Explainable Youth Sports Recommendation Using Asymmetric Contribution Scoring},
-  author    = {Sheoran, Jatin and Jangra, Khushi and Badal, Tapas},
+  author    = { Jatin Sheoran and Khushi Jangra, Dr. Tapas Badal},
   booktitle = {Proceedings of the International Conference on Computer Science and Sports Analytics},
   series    = {Lecture Notes in Computer Science (LNCS)},
   publisher = {Springer},
