@@ -7,7 +7,7 @@
 
 > **Official Implementation Repository for the Research Paper:**  
 > *"Explainable Youth Sports Recommendation Using Asymmetric Contribution Scoring"*  
-> **Authors:** Jatin Sheoran, Khushi Jangra, Tapas Badal  
+> **Authors:** Jatin Sheoran, Khushi Jangra, Dr. Tapas Badal  
 > **Affiliation:** Department of Computer Science & Engineering, Bennett University, Greater Noida, India  
 > **Target Venue:** Springer Lecture Notes in Computer Science (LNCS) Proceedings  
 
